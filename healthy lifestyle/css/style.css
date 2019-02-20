@@ -1,0 +1,145 @@
+/*Цвета HEX - https://colorscheme.ru/html-colors.html*/
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+
+/*Цвет главной страницы*/
+body {
+    background-color: #f8f8f8;
+}
+
+/*Для главного меню*/
+.menu {
+    width: 900px;
+    list-style: none;
+    /* Отключение отображения маркеров. */
+    padding: 0;
+    font-size: 26px;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu li {
+    margin: 10px 10px;
+    display: inline-block;
+}
+
+.menu li a {
+    color: #444444;
+    /* Цвет текста в блоках меню. */
+    text-decoration: none;
+    /* Устранение подчёркивания ссылок. */
+    padding: 10px;
+    margin: 0;
+    outline: none;
+}
+
+.menu li a:hover {
+    background: white;
+    /* Высота блока */
+    /* Цвет блока при наведении курсора. */
+    border: 5px solid #FFA07A;
+}
+
+
+h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+    font-size: 32px;
+    color: #222222;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #444444;
+}
+
+/*С-ва заголовков (Описание, Характеристики, Подробное описание товара, Состав):*/
+.header {
+    color: black;
+    /*Цвет текста*/
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+/*С-ва для текста подробное описание товара*/
+.description {
+    color: #808080;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+/*С-ва для текста подробное описание товара*/
+.detailed_description {
+    color: #484343;
+    font-size: 16px;
+    /*Размер шрифта*/
+    font-weight: 400;
+    /*Насыщенность шрифта*/
+    line-height: 24px;
+    /*Высота текста*/
+    text-align: left;
+    /*Расположение текста*/
+}
+
+/*Для списка внурти подраздела «Характеристики»*/
+.characteristics {
+    font-family: 'monospace';
+    color: #778899;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.characteristics li {
+    list-style: none;
+    /* Убираем исходные маркеры */
+    background: url(../images/list.png) no-repeat 0 4px;
+    /* Параметры фона */
+    padding-left: 24px;
+    /* Смещаем текст вправо */
+    line-height: 20px;
+}
+
+
+/*Для списков внурти подразделов*/
+.marker li {
+    list-style: none;
+    /* Убираем исходные маркеры */
+    background: url(../images/list.png) no-repeat 0 4px;
+    /* Параметры фона */
+    padding-left: 24px;
+    /* Смещаем текст вправо */
+    line-height: 20px;
+}
+
+/*значения ширины и высоты для полей ввода.*/
+input[type="text"] {
+    width: 363px;
+    height: 20px;
+    margin: 5px;
+    color: #444444;
+    font-size: 16px;
+}
+
+/*размер блока обратной связи*/
+.left_block {
+
+    width: 700px;
+    text-align: left;
+}
+
+/*Рамка произвольного цвета для изображений, размещенных на странице подробного описания товара*/
+
+.frame {
+    border: 7px solid #FFA07A;
+}
+
+.marker {
+    list-style: none;
+    /* Отключение отображения маркеров. */
+}
