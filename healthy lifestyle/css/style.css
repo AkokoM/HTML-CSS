@@ -1,0 +1,306 @@
+/*Цвета HEX - https://colorscheme.ru/html-colors.html*/
+
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic|Playfair+Display+SC:400,700&subset=latin,cyrillic);
+
+/*Цвет главной страницы*/
+body {
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #feffdb;
+    height: 50px;
+}
+
+.content {
+    background-color: #ffc60b;
+    height: 0 auto;
+}
+
+/*контент страницы каталога*/
+.content_catalog {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffc60b;
+    justify-content: space-around;
+    height: 400px;
+    align-items: flex-start;
+}
+
+.footer {
+    background-color: #444444;
+    height: 50px;
+    color: #f2f3f3;
+    text-align: right;
+    padding: 30px 20px 0px 0px;
+}
+
+.footer a {
+    color: #f2f3f3;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C0C0C0;
+    /* Цвет ссылки при наведении на нее курсора мыши */
+}
+
+/*Для главного меню*/
+.menu {
+    width: 800px;
+    list-style: none;
+    /* Отключение отображения маркеров. */
+    padding: 0;
+    font-size: 26px;
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: right;
+}
+
+.menu a:hover {
+    color: #8E600F;
+}
+
+.menu li {
+    margin: 10px 10px;
+    display: inline-block;
+}
+
+.menu li a {
+    color: #444444;
+    /* Цвет текста в блоках меню. */
+    text-decoration: none;
+    /* Устранение подчёркивания ссылок. */
+    padding: 5px;
+    margin: 0;
+    outline: none;
+}
+
+.menu li a:hover {
+    background: white;
+    /* Высота блока */
+    /* Цвет блока при наведении курсора. */
+    outline: 5px solid #FFA07A;
+}
+
+
+h1 {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: 500;
+    letter-spacing: 10px;
+    font-size: 32px;
+    color: #222222;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    color: #444444;
+}
+
+/*С-ва заголовков (Описание, Характеристики, Подробное описание товара, Состав):*/
+.background_color_text {
+    color: black;
+    /*Цвет текста*/
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #ccc;
+}
+
+/*С-ва для текста подробное описание товара*/
+.description {
+    color: #808080;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+}
+
+/*С-ва для текста подробное описание товара*/
+.detailed_description {
+    color: #484343;
+    font-size: 16px;
+    /*Размер шрифта*/
+    font-weight: 400;
+    /*Насыщенность шрифта*/
+    line-height: 24px;
+    /*Высота текста*/
+    text-align: left;
+    /*Расположение текста*/
+}
+
+/*Для списка внурти подраздела «Характеристики»*/
+.characteristics {
+    font-family: 'monospace';
+    color: #778899;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+.characteristics li {
+    list-style: none;
+    /* Убираем исходные маркеры */
+    background: url(../images/list.png) no-repeat 0 4px;
+    /* Параметры фона */
+    padding-left: 24px;
+    /* Смещаем текст вправо */
+    line-height: 20px;
+}
+
+
+/*Для списков внурти подразделов*/
+.marker li {
+    list-style: none;
+    /* Убираем исходные маркеры */
+    background: url(../images/list.png) no-repeat 0 4px;
+    /* Параметры фона */
+    padding-left: 24px;
+    /* Смещаем текст вправо */
+    line-height: 20px;
+}
+
+/*значения ширины и высоты для полей ввода.*/
+input[type="text"] {
+    width: 363px;
+    height: 20px;
+    margin: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.input-email:focus {
+    color: #4CAF50;
+    /* Цвет текста */
+    background-color: #ffe;
+    /* Цвет фона */
+}
+
+/*размер блока обратной связи*/
+.left_block {
+
+    width: 700px;
+    text-align: left;
+}
+
+/*Рамка произвольного цвета для изображений, размещенных на странице подробного описания товара*/
+
+.frame {
+    border: 7px solid #FFA07A;
+    width: 300px;
+    height: 200px;
+}
+
+.frame:hover {
+    border: 7px solid transparent;
+}
+
+.marker {
+    list-style: none;
+    /* Отключение отображения маркеров. */
+}
+
+/*Стиль кнопки "отправить"*/
+.style_button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 11px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+/*Стиль кнопки "купить"*/
+.buy_button {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 11px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.style_button:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16), 0 11px 35px 0 rgba(0, 0, 0, 0.11);
+}
+
+.product {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    margin-left: 270px;
+    position: absolute;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    width: 300px;
+    height: 100px;
+}
+
+td {
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+/*Первая букву первого слова другим шрифтом и размером.*/
+P:first-letter {
+    font-family: "Times New Roman", Times, serif;
+    /* ругой шрифта*/
+    font-size: 25px;
+    /*Размер шрифта*/
+}
+
+.border_line {
+    border-bottom: 1px solid black;
+}
+
+/*контент страницы каталога*/
+.content_catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 350px;
+    align-items: flex-start;
+}
+
+/*блоки контента*/
+.block {
+    width: 192px;
+    height: 128px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
